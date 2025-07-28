@@ -1,0 +1,10 @@
+//Write a program to tokenize and iterate over a string
+
+fn main() {
+    let text = "Rust is fast, safe, and productive.";
+    let tokens = text.split_whitespace();
+
+    for token in tokens {
+        println!("{}", token);
+    }
+}

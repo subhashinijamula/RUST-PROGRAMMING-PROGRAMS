@@ -1,0 +1,9 @@
+//Write a program to Creating a String
+
+fn main() {
+    let mut s = String::new();
+    let hello = String::from("Hello");
+    s.push_str("World");
+    let greeting = hello + " " + &s;
+    println!("{}", greeting);
+}

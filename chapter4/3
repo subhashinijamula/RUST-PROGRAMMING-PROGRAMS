@@ -1,0 +1,24 @@
+// Write a program to demonstrate the Pass by Value and Pass by Reference
+
+fn pass_by_value(mut x: i32) {
+    x += 10;
+    println!("Inside pass_by_value function: x = {}", x);
+}
+
+fn pass_by_reference(x: &mut i32) {
+    *x += 10;
+    println!("Inside pass_by_reference function: x = {}", x);
+}
+
+fn main() {
+    let mut num1 = 5;
+    let mut num2 = 5;
+
+    println!("Before pass_by_value: num1 = {}", num1);
+    pass_by_value(num1); // Pass by value
+    println!("After pass_by_value: num1 = {}", num1);
+
+    println!("\nBefore pass_by_reference: num2 = {}", num2);
+    pass_by_reference(&mut num2); // Pass by reference
+    println!("After pass_by_reference: num2 = {}", num2);
+}

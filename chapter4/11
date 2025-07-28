@@ -1,0 +1,15 @@
+//Write a program to find all words starting with a “c” in a string passed as a parameter.
+Concatenate them together and return the result.
+
+fn concat_words_starting_with_c(input: &str) -> String {
+    input
+        .split_whitespace()
+        .filter(|word| word.starts_with('c'))
+        .collect::<String>()
+}
+
+fn main() {
+    let text = "cat car dog cow camel circle apple";
+    let result = concat_words_starting_with_c(text);
+    println!("{}", result);
+}

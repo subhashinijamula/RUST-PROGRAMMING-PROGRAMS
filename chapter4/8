@@ -1,0 +1,14 @@
+//Implement the string manipulation operations using Core Methods of String Objects
+a. str.capacity()
+b. str.contains("sub_str")
+c. str.replace(replace_from, replace_to)
+d. string.trim()
+
+fn main() {
+    let mut s = String::from("  Hello, Rustaceans!  ");
+    println!("Capacity: {}", s.capacity());
+    println!("Contains 'Rust': {}", s.contains("Rust"));
+    let replaced = s.replace("Rustaceans", "World");
+    println!("After replace: '{}'", replaced);
+    println!("After trim: '{}'", s.trim());
+}

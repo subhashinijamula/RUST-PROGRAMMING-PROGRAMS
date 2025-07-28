@@ -1,0 +1,18 @@
+//Write a function calculate_area_perimeter() that takes x and y( length and width of a
+rectangle) as a parameter to the function and returns a tuple (area, perimeter).
+
+fn calculate_area_perimeter(x: f64, y: f64) -> (f64, f64) {
+    let area = x * y;
+    let perimeter = 2.0 * (x + y);
+    (area, perimeter)
+}
+
+fn main() {
+    let length = 5.0;
+    let width = 3.0;
+    
+    let (area, perimeter) = calculate_area_perimeter(length, width);
+    
+    println!("Area: {}", area);
+    println!("Perimeter: {}", perimeter);
+}
